@@ -1,0 +1,87 @@
+.item-wrapper{
+    margin:30px;
+    display:flex;
+    width:600px;
+    height:80px;
+    padding:3px;
+    border:1px solid white;
+}
+.item-wrapper:hover{
+    border:1px solid #01FEFF;
+}
+.number{
+    width:15%;
+    height:100%;
+    position: relative;
+    border: 1px solid #495875;
+    margin-right:10px;
+}
+.value{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-size:28px;
+    color:#4679C1;
+    font-weight: 800;
+    
+    padding:0 3px 0 3px;
+}
+.line{
+    text-align: justify;
+}
+.logo{
+    width:50px;
+    height:50px;
+    border: 1px solid #495875;
+    margin-left:20px;
+    margin-right:5px;
+    padding:0 5px 0 5px;
+}
+.info{
+    display:flex;
+    flex-grow: 2;
+    border: 1px solid #495875;
+}
+.left{
+    display:flex;
+    margin:5px 0px 5px 0px;
+    align-items: center;
+}
+.line{
+    display:block;
+}
+.right{
+    display:flex;
+    align-items: center;
+}
+.right-info{
+    margin:5px;
+    padding-left:5px;
+    border-left: 1px solid #495875;
+}
+.actions{
+    background-color:#BBFF00;
+    margin-right:auto;
+    padding:0 10px 0 10px;
+    height:50%;
+    text-align:center;
+    transform: rotate(0deg);
+    
+    /*Set our animation play state to paused initially */
+    
+    
+}
+.actions:hover{
+    animation: ringring 0.2s linear infinite;
+}
+@keyframes ringring {
+
+    50%  {transform: translateX(3px) rotate(2deg);}
+   
+    100% {transform: translateX(-3px) rotate(-2deg);}
+    
+  }
+span{
+    font-weight: bold;
+}

@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root {
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.6rem;
+}
+a,a:hover{
+    text-decoration: none;
+}
+.product{
+    width:200px;
+    height:260px;
+    margin:auto;
+    border:0.5px solid black;
+    position: relative;
+}
+.name{
+    font-weight: bold;
+}
+.price,.overlay-price{
+    color:red;
+    margin-top:5px;
+}
+.price{
+    border-bottom: 1px dotted black;
+}
+.product-image{
+    display:flex;
+}
+.product-name{
+    margin-left:5px;
+    margin-right:5px;
+}
+.product-image>a{
+    margin:auto;
+}
+.product-overlay{
+    margin-left:5px;
+    position:absolute;
+    z-index:-1;
+    visibility: hidden;
+}
+.product-config{
+    display:flex;
+    align-items: center;
+}
+.btn-cart{
+    border-radius:25px;
+    height:35px;
+    border:0.5px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:black;
+    padding:5px;
+    margin-right:auto;
+    transition: border-radius 1s;
+}
+.btn-cart:hover{
+    border-radius:0px;
+}
+.btn-cart:hover .fa-shopping-cart{
+    border-radius:0px;
+}
+.fa-shopping-cart{
+    border-radius:25px;
+    color:white;
+    background-color:rgb(116, 116, 197);
+    padding:5px;
+    transition: border-radius 1s;
+}
+.fa-heart,.fa-not-equal{
+    margin:5px;
+    color:#757679
+}
+.fa-heart:hover{
+    color:red;
+}
+.fa-not-equal:hover{
+    color:greenyellow;
+}
+.product:hover .product-overlay{
+    z-index:1;
+    visibility: visible;
+}
+.product:hover .product-image{
+    visibility: hidden;
+}
+.product:hover .product-name{
+    visibility: hidden;
+}
+.product-image:before{
+    content:"Mới";
+    position:absolute;
+    right:0%;
+    padding:5px;
+    margin:5px;
+    background:green;
+    color:white;
+}
+

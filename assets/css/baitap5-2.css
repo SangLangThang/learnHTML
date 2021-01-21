@@ -1,0 +1,38 @@
+.container{
+    display:flex;
+    margin:30px;
+    
+}
+.menu{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #97CB1A;
+    color:white;
+    padding:10px 20px 10px 20px;
+    border-radius: 0px 2px 2px 0px;
+    position: relative;
+}
+.menu::after{
+    content:"";
+    position: absolute;
+    left:100%;
+    top:25%;
+    border-left: 10px solid#97CB1A;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+a{
+    text-decoration: none;
+    color:rgb(167, 160, 160);
+}
+a:hover{
+    text-decoration: none;
+    color:#57B9E4;
+}
+ul{
+    list-style: none;
+    display:flex;
+}
+li{
+    margin:10px;
+}

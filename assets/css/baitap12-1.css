@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Open Sans',sans-serif;
+}
+a,a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.container{
+    width:300px;
+    height:270px;
+    margin:auto;
+    text-align: center;
+    border:1px solid gray;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:100px;
+    position: relative;
+    background:white;
+}
+.container a,p{
+    margin:15px 55px;
+}
+.container:before{
+    content:"+";
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    line-height: 30px;
+    border:1px solid gray;
+    position: absolute;
+    background-color:white;
+    color:black;
+    top: 100%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+   
+}
+.icon{
+    width:80px;
+    height:80px;
+    position: absolute;
+    
+    background: white;
+    top: 0%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: transform 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fake-icon{
+    width:82px;
+    height:82px;
+    position: absolute;
+    border:1px solid gray;
+    background: white;
+    top: 0%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    transition: transform 1s;
+   z-index:-1;
+}
+.icon .inner-icon{
+    width:60px;
+    height:60px;
+    background-color:greenyellow;
+}
+.container:hover .icon{
+    transform-origin: center center;
+    top: 0%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+}
+.container:hover .fake-icon{
+    transform-origin: center center;
+    top: 0%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+    
+}

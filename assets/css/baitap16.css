@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    
+}
+a,a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.top-header{
+    display:flex;
+    margin:20px 40px;
+    color:#C3C3C3;
+}
+.top-header p span{
+    color:#E66FBC;
+}
+.top-header p {
+    color:black;
+}
+.top-header .icon-top-header{
+    margin:auto;
+}
+.top-header .icon-top-header i{
+    padding:0px 20px;
+}
+.top-header .icon-top-header i:hover{
+    color:gold;
+}
+.top-header .link-top-header a{
+    padding:0px 10px;
+}
+.top-header .link-top-header a:hover{
+    color:#E66FBC;
+}
+.bottom-header{
+    display:flex;
+    margin:20px 40px;
+    align-items: center;
+}
+.bottom-header .logo{
+    margin:auto;
+}
+.bottom-header .logo img{
+   max-width:150px;
+   height:auto;
+}
+.bottom-header .link-bottom-header{
+    padding-right:10px;
+}
+.bottom-header .button a{
+    margin: 0px 5px;
+    padding:10px 20px;
+   
+    
+    border-radius:4px;
+}
+.login:hover{
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(81deg, #eb008b, #652d90);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+.login,.signup{
+    border: solid 2px transparent;
+}
+.signup{
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(81deg, #eb008b, #652d90);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+.signup:hover{
+    background-image: linear-gradient(81deg, #eb008b, #652d90);
+    background-clip: padding-box;
+}
+.another{
+    border: 2px solid black;
+}
+.another:hover{
+    border: 2px solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(81deg, #eb008b, #652d90);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    color:#E66FBC;
+}
+
+

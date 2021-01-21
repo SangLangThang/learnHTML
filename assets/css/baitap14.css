@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color:gray;
+}
+a,a:hover{
+    text-decoration: none;
+    color:inherit;
+}
+.container{
+    display:flex;
+    margin:30px;
+}
+.left,.right{
+    display:flex;
+    flex-direction: column;
+}
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    width:300px;
+   margin:20px;
+}
+.item img{
+    width:120px;
+    height:auto;
+    margin:10px;
+}

@@ -1,0 +1,97 @@
+.container{
+    margin:30px;
+    background-image: url("../images/baitap5-background.jpg");
+    width:390px;
+    height:285px;
+    display:flex;
+    flex-direction: column;
+    
+    position: relative;
+}
+h3{
+    text-transform :uppercase;
+    color:white;
+    font-weight: bold;
+   
+    text-align:center;
+    transition: all 0.3s;
+    transform: translateY(130px);
+    
+}
+.inner{
+    width:100%;
+    display:flex;
+    
+    flex-direction: column;
+    position:absolute;
+    left:0;
+    padding-left:5px;
+    transform: translateY(285px);
+    z-index: 2;
+    transition: transform 0.3s;
+    visibility: hidden;
+}
+
+a{
+    width:30%;
+    height:100%;
+    float:left;
+    margin-right:10px;
+    position: relative;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.item{
+    width:100%;
+    margin: 10px 0 10px 0px ;
+}
+p{
+    color:#CCCCCC;
+    transition: color 0.3s;
+}
+.container:hover .inner {
+    transform: translateY(60px);
+    visibility: visible;
+}
+.container:hover h3 {
+    transform: translateY(20px) scale(0.6,0.6);
+    z-index:2;
+}
+.container:hover h3:hover {
+    color:#CCCCCC;
+}
+.container:hover .item:hover p {
+    color:white;
+}
+.container:hover .item:hover a:after {
+    opacity: 0.5;
+}
+.container:hover:before {
+    opacity: 0.4;
+}
+.container:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    z-index: 1;
+}
+a:after{
+    content: "";
+    position: absolute;
+   
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}

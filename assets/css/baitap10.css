@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root {
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.6rem;
+}
+a,a:hover{
+    text-decoration: none;
+    color:white;
+}
+li{
+    list-style-type: none;
+    
+}
+.phone{
+    display:flex;
+    align-items: center;
+    margin:auto;
+    margin-top:200px;
+    width:200px;
+    height:40px;
+    border-radius:25px;
+    background-color: hsla(0, 93%,47%, 0.75);
+   
+}
+.phone-number{
+    flex-grow:2;
+    text-align:center;
+   
+}
+.phone-icon{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-color:red;
+    margin-left:10px;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.phone-icon:before{
+    content: "";
+   
+    position: absolute;
+    border-radius:50%;
+   
+    transform: translate(-50%, -50%);
+    background-color:rgb(231, 149, 149);
+    height:30px;
+    width:30px;
+    animation:zoom 2s infinite ;
+    z-index:-1;
+}
+.phone-icon:after{
+    content: "";
+    position:absolute;
+    border-radius:50%;
+    border:2px solid rgb(231, 149, 149);
+    height:70px;
+    width:70px;
+    animation: border-hide 1s infinite ;
+}
+.fa-phone{
+    animation: ringring 1s infinite ;
+    
+}
+@keyframes border-hide{
+    0% {
+        transform: scale(1,1);
+        border-color:rgb(231, 149, 149);
+    }
+    
+    100% {
+        transform: scale(2,2);
+        border-color:transparent;
+    }
+}
+@keyframes zoom{
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(2,2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+@keyframes ringring{
+    0% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+  }

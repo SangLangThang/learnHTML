@@ -1,0 +1,33 @@
+.first{
+    margin-top:50px;
+    margin-left:50px;
+    color:white;
+    width:400px;
+    height:500px;
+    position: relative;
+
+}
+img{
+    width:400px;
+    height:auto;
+}
+
+.caption{
+    background-image: url("/assets/images/bongmo.png");
+    width:100%;
+    position:absolute;
+    top:150px;
+    left:0;
+    padding:10px 10px 0px 10px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+p{
+    font-size:15px;
+}
